@@ -1,0 +1,15 @@
+#!/bin/bash
+HOST='ftp.server.com'
+USER='username@server.com'
+PASSWD='password*'
+DIRECTORY='/public_html/dbs/resources/media'
+
+ftp -n $HOST << END_SCRIPT
+quote USER $USER
+quote PASS $PASSWD
+cd $DIRECTORY
+prompt
+mput *.mp4
+quit
+END_SCRIPT
+exit 0

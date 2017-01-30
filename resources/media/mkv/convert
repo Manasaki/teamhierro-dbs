@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for i in *.mkv ;
+do
+	rm subtitles.ass
+	ffmpeg -i "$i" subtitles.ass
+	ffmpeg -i "$i" -acodec aac -strict experimental -ac 2 -ab 128k -vcodec libx264 -f mp4 -crf 22 -s 640x360 -vf ass=subtitles.ass "$i".mp4;
+	mv "$i" done/"$i";
+done
+
+for k in *.mp4;
+do
+	mv "$k" ../"${k/.mkv.mp4/.mp4}";
+done
