@@ -1,0 +1,58 @@
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.header{
+    background: #999;
+}
+
+/*in case default validate is used without custom option*/
+label.error{
+    border: none;
+    background: none;
+    font-weight: normal;
+}
+
+span.message{
+    background: transparent url("./images/msg_arrow.gif") no-repeat scroll left center;
+    padding-left: 7px;
+}
+
+span.error{
+    background-color:#F3E6E6;
+    border-color: #924949;
+    border-style: solid solid solid none;
+    border-width: 2px;
+    padding: 5px;
+    margin: 0px;
+}
+
+input.error,select.error,textarea.error{
+  padding: 0px !important;
+}
+
+.doc{
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    line-height: 25px;
+    border: 2px solid lime;
+    padding: 5px;
+    -webkit-border-radius: 16px;  
+    -moz-border-radius: 16px;  
+    border-radius: 16px; 
+}
+
+
+.error{
+    color: red;
+}
+
+.navbar-toggle {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    border-width:0;
+    border-radius:0;
+}
