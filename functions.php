@@ -1,7 +1,7 @@
 <?php
 function database()
 {
-	$link = mysqli_connect('localhost', 'teamhier_dbs', 'B8:!j>cX$Cd7q${~', 'teamhier_dbs');
+	$link = mysqli_connect('localhost', 'username', 'password', 'teamhier_dbs');
 	if(!$link)
 	{
 		echo "Error: Unable to connect to databse";
