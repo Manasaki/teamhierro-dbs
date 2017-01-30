@@ -32,20 +32,11 @@ $play = $_GET['playepisode'];
       <div class="container">
         <div class="navbar-fixed-top">
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default">
   <div class="container">
-    <a class="navbar-brand" href="index.php?">
-                    <strong>Watch Dragonball Super</strong>
-            </a>
-			<a class="navbar-brand" href="community/">
-                    | <strong>Forums</strong> |
-            </a>
-
-
-    <div class="collapse navbar-collapse" id="navbar-collapse">
-
-
-    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.php?">Home</a></li>
+      <li><a href="community/">Forums</a></li>
   </div>
 </nav>
 
@@ -53,7 +44,7 @@ $play = $_GET['playepisode'];
     </div>
     <div class="container content">
         <div class="row status">
-            <div class="span12" style="margin: 0px auto">
+            <div class="span12" style="margin: 10px auto">
 
             <!-- Body -->
 <p>
@@ -62,9 +53,9 @@ $play = $_GET['playepisode'];
       if (!isset($_GET['playepisode']) || empty($_GET['playepisode'])) {
 		$files = glob('resources/media/*.mp4');
 		natsort($files);
-		echo "<p>This website was made for DBS - Future Trunks Arc (47-67), but we're adding them all.<br /><br />We currently have ";
+		/*echo "<p>This website was made for DBS - Future Trunks Arc (47-67), but we're adding them all.<br /><br />We currently have ";
 		echo episodeCount();
-		echo " episodes, and are actively adding more. The site is built for iOS devices but also is compatable with the Chromecast.<br/><br/>If you find something wrong with the site, please use the email link at the bottom of the page to report it.</p><p class='bg-primary'><strong>We are currently updating the site. Some episodes may be unavailable.</strong></p><hr/>";
+		echo " episodes, and are actively adding more. The site is built for iOS devices but also is compatable with the Chromecast.<br/><br/>If you find something wrong with the site, please use the email link at the bottom of the page to report it.</p><p class='bg-primary'><strong>We are currently updating the site. Some episodes may be unavailable.</strong></p><hr/>";*/
           foreach ($files as $file => $value) {
             $short = substr($value, 16, -4);
             $play = $short;
