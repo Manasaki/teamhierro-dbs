@@ -26,7 +26,7 @@ $play = $_GET['playepisode'];
 <link type="text/css" rel="stylesheet" href="./resources/js/styles.css">
 <!-- Main site layout and styles Ends -->
 <link type="text/css" rel="stylesheet" href="./resources/js/prettify.min.css">
-
+</head>
 
   <body>
       <div class="container">
@@ -35,12 +35,10 @@ $play = $_GET['playepisode'];
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <a class="navbar-brand" href="index.php?">
-                    <strong>Watch Dragonball Super
-					<?php
-					if (!empty($_GET['playepisode']) && isset($_GET['playepisode'])) {
-						echo " : ".$play;
-					}
-					?></strong>
+                    <strong>Watch Dragonball Super</strong>
+            </a>
+			<a class="navbar-brand" href="community/">
+                    | <strong>Forums</strong> |
             </a>
 
 
