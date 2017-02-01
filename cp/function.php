@@ -2,7 +2,7 @@
 
 function cpDatabase()
 {
-	$link = mysqli_connect('localhost', 'teamhier_dbs', 'B8:!j>cX$Cd7q${~', 'teamhier_cp');
+	$link = mysqli_connect('localhost', 'username', 'password', 'database');
 	if (!$link)
 	{
 		echo '<strong>Critical-Error</strong>: Unable to connect to the database teamhier_cp.';
