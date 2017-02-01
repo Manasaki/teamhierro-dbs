@@ -15,7 +15,7 @@ function cpDatabase()
 
 function synopsisDatabase()
 {
-	$link = mysqli_connect('localhost', 'teamhier_dbs', 'B8:!j>cX$Cd7q${~', 'teamhier_dbs');
+	$link = mysqli_connect('localhost', 'user', 'pass', 'db name');
 	if (!$link)
 	{
 		echo '<strong>Critical-Error</strong>: Unable to connect to the database: teamhier_dbs.';
